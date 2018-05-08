@@ -1,20 +1,14 @@
 ﻿# -*- coding: utf-8 -*-
 import json
-#from functools import wraps
 import shutil
 
 import arrow
 import requests
 from flask import g, request, make_response, jsonify, abort
-#from flask_restful import reqparse, abort, Resource
-#from passlib.hash import sha256_crypt
-#from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 from sqlalchemy import func
 
 from . import db, app, cache, logger, access_logger
 from models import *
-#import helper
-#import helper_kk
 
 
 @app.route('/')
